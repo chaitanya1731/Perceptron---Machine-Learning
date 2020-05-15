@@ -1,0 +1,103 @@
+Outputs for 20 different inputs -
+
+Learning constant: 0.01          # of iterations: 1000
+Training         Test_with_stopwords     Test_without_stopwords
+99.352052        91.631799               92.887029
+
+Learning constant: 0.45          # of iterations: 200
+Training         Test_with_stopwords     Test_without_stopwords
+98.272138        92.468619               93.305439
+
+Learning constant: 0.7   # of iterations: 20
+Training         Test_with_stopwords     Test_without_stopwords
+94.816415        90.585774               92.050209
+
+Learning constant: 0.46676       # of iterations: 235
+Training         Test_with_stopwords     Test_without_stopwords
+98.272138        92.468619               93.305439
+
+Learning constant: 0.0101        # of iterations: 456
+Training         Test_with_stopwords     Test_without_stopwords
+98.272138        91.631799               93.096234
+
+Learning constant: 0.001         # of iterations: 300
+Training         Test_with_stopwords     Test_without_stopwords
+87.688985        83.472803               82.008368
+
+Learning constant: 0.0341        # of iterations: 450
+Training         Test_with_stopwords     Test_without_stopwords
+99.352052        94.142259               91.422594
+
+Learning constant: 0.54          # of iterations: 1322
+Training         Test_with_stopwords     Test_without_stopwords
+98.920086        90.585774               92.677824
+
+Learning constant: 0.0003435     # of iterations: 165
+Training         Test_with_stopwords     Test_without_stopwords
+73.002160        68.200837               67.364017
+
+Learning constant: 0.999         # of iterations: 10
+Training         Test_with_stopwords     Test_without_stopwords
+94.816415        90.585774               92.050209
+
+Learning constant: 0.999         # of iterations: 700
+Training         Test_with_stopwords     Test_without_stopwords
+98.488121        92.677824               92.887029
+
+Learning constant: 0.467         # of iterations: 700
+Training         Test_with_stopwords     Test_without_stopwords
+98.272138        92.468619               93.305439
+
+Learning constant: 0.2   # of iterations: 50
+Training         Test_with_stopwords     Test_without_stopwords
+95.680346        91.422594               91.004184
+
+Learning constant: 0.1234        # of iterations: 1234
+Training         Test_with_stopwords     Test_without_stopwords
+99.352052        92.887029               92.887029
+
+Learning constant: 0.05          # of iterations: 5
+Training         Test_with_stopwords     Test_without_stopwords
+77.753780        76.987448               89.958159
+
+Learning constant: 0.786         # of iterations: 897
+Training         Test_with_stopwords     Test_without_stopwords
+98.488121        92.677824               92.887029
+
+Learning constant: 0.0001        # of iterations: 10
+Training         Test_with_stopwords     Test_without_stopwords
+52.483801        52.719665               44.769874
+
+Learning constant: 0.0001        # of iterations: 1054
+Training         Test_with_stopwords     Test_without_stopwords
+60.043197        58.786611               53.974895
+
+Learning constant: 0.0046        # of iterations: 344
+Training         Test_with_stopwords     Test_without_stopwords
+95.032397        87.447699               90.585774
+
+Learning constant: 0.00046       # of iterations: 344
+Training         Test_with_stopwords     Test_without_stopwords
+76.457883        70.711297               70.920502
+
+-------------------------------------------------------------------
+Comparison with Naive Bayes in Homework 2 -
+
+Naive Bayes -
+Training 	 Test_with_stopwords 	 Test_without_stopwords
+97.192225	 94.979079		 94.351464
+
+Perceptron -
+Learning constant: 0.01          # of iterations: 1000
+Training         Test_with_stopwords     Test_without_stopwords
+99.352052        91.631799               92.887029
+
+Here we can observe that the accuracy of the training set has been increased in Perceptron and
+accuracy of test datasets with and without stopwords has been slightly decreased because
+- Perceptron reads one sample at a time to update its knowledge about the training data.
+This is called online learning. That is Perceptron uses Neural Network for Learning and classification and
+Naive Bayes uses Probabilistic theory.
+- Accuracy of Probabilistic model depends on number of training examples and accuracy of perceptrons depend on
+weights and loss and hence it does not reach the convergence points
+- Perceptron takes data and try to change the weights iteratively to find the good network and learns itself and
+tries the same on the test data resulting in the slightly decrease in accuracy than that of the probability theory in Naive Bayes.

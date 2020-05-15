@@ -1,0 +1,3 @@
+Learning constant: 0.00046 	 # of iterations: 344
+Training 	 Test_with_stopwords 	 Test_without_stopwords
+76.457883	 70.711297		 70.920502
